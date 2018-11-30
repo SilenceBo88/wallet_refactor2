@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/walletInfoPreBut"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <ImageButton
+                android:layout_width="10dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8dp"
+                android:background="@color/colorPrimary"
+                android:scaleType="centerInside"
+                android:src="@drawable/pre" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/walletName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:text="@string/tx"
+            android:textColor="@color/whiteColor"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/saveBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:text="@string/save"
+            android:textColor="@color/whiteColor"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/zhanghuLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_below="@+id/top"
+        android:background="@color/whiteColor">
+
+        <RelativeLayout
+            android:id="@+id/left"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_toLeftOf="@+id/img"
+            android:background="@color/whiteColor"
+            android:gravity="left">
+
+            <ImageView
+                android:id="@+id/touXiangImg"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignBottom="@+id/addressText"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/touxiang" />
+
+            <LinearLayout
+                android:id="@+id/numLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/touXiangImg">
+
+                <TextView
+                    android:id="@+id/ethNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="wallet"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="20dp" />
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:gravity="bottom"-->
+                    <!--android:text="Ether"-->
+                    <!--android:textColor="@color/text_color_black"-->
+                    <!--android:textSize="15dp" />-->
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/addressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/numLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/touXiangImg"
+                android:ellipsize="middle"
+                android:ems="10"
+                android:gravity="top|left"
+                android:singleLine="true"
+                android:text="0x1231200sadas02130010231999qwe09901290390"
+                android:textColor="@color/text_color_black"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/zhanghuLayout"
+        android:background="@color/wathet" />
+
+    <LinearLayout
+        android:id="@+id/userLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:gravity="left"
+            android:paddingLeft="9dp"
+            android:text="@string/walletName"
+            android:textColor="@color/text_color_black"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/nameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:layout_marginTop="9dp"
+            android:background="@null"
+            android:paddingLeft="9dp"
+            android:textColor="@color/text_color_gray"
+            android:textColorHint="@color/text_color_gray_cost"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/background_gray"></View>
+
+        <RelativeLayout
+            android:id="@+id/updatePassBut"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/back_down"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="9dp"
+                android:text="@string/updatePass"
+                android:textColor="@color/text_color_black"
+                android:textSize="16dp" />
+
+            <ImageButton
+                android:layout_width="13dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/next_gary" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/userLayout"
+        android:background="@color/wathet">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/copyPrvkeyBut"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/back_down"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:paddingLeft="9dp"
+                android:text="@string/copyPrvKey"
+                android:textColor="@color/text_color_black"
+                android:textSize="16dp" />
+
+            <ImageButton
+                android:layout_width="13dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/next_gary" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/background_gray" />
+
+        <RelativeLayout
+            android:id="@+id/copyKeyStoreBut"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/back_down"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:paddingLeft="9dp"
+                android:text="@string/copyKeyStore"
+                android:textColor="@color/text_color_black"
+                android:textSize="16dp" />
+
+            <ImageButton
+                android:layout_width="13dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/next_gary" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/background_gray" />
+
+        <RelativeLayout
+            android:id="@+id/copyMnemonicBut"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/back_down"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left"
+                android:paddingLeft="9dp"
+                android:text="@string/copyMnemonic"
+                android:textColor="@color/text_color_black"
+                android:textSize="16dp" />
+
+            <ImageButton
+                android:layout_width="13dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/next_gary" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/background_gray" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/deleteWalletBut"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/fillet_fill_rad"
+        android:text="@string/deletrWalletBut"
+        android:textColor="@color/whiteColor"
+        android:textSize="16dp" />
+</RelativeLayout>

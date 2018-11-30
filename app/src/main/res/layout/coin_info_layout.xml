@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:id="@+id/coinInfoPreBut"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+
+                <ImageButton
+                    android:layout_width="10dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dp"
+                    android:background="@color/colorPrimary"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/pre" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/infoWalletName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:text="ETH"
+                android:textColor="@color/whiteColor"
+                android:textSize="19dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                android:background="@color/whiteColor"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/balanceView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/whiteColor"
+                    android:gravity="top|center"
+                    android:paddingTop="10dp"
+                    android:text="0"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/coinvalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp"
+                    android:background="@color/whiteColor"
+                    android:gravity="top|center"
+                    android:text="≈ $ 0"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="15dp"-->
+                <!--android:layout_gravity="right"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:background="@color/whiteColor"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_marginRight="14dp"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="8dp"-->
+                        <!--android:layout_height="8dp"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--android:scaleType="centerInside"-->
+                        <!--android:src="@drawable/tx_hs" />-->
+
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:text="数量"-->
+                        <!--android:textSize="11dp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="8dp"-->
+                        <!--android:layout_height="8dp"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--android:scaleType="centerInside"-->
+                        <!--android:src="@drawable/tx_ls" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:text="资产"-->
+                        <!--android:textSize="11dp" />-->
+                <!--</LinearLayout>-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--<com.github.mikephil.charting.charts.LineChart-->
+                <!--android:id="@+id/lineChart"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="140dp"-->
+                <!--android:background="@color/whiteColor">-->
+
+            <!--</com.github.mikephil.charting.charts.LineChart>-->
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/txLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_below="@+id/topLayout"
+        android:background="@color/whiteColor">
+
+        <TextView
+            android:id="@+id/txTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="left"
+            android:layout_marginTop="15dp"
+            android:background="@color/whiteColor"
+            android:gravity="left|center"
+            android:paddingLeft="13dp"
+            android:text="@string/txinfo"
+            android:textColor="@color/text_color_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/txTextView"
+            android:layout_centerInParent="true"
+            android:background="@color/whiteColor">
+
+            <RelativeLayout
+                android:id="@+id/noTxData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="140dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/top"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/no_data" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@id/top"
+                        android:layout_marginTop="20px"
+                        android:text="暂无数据"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/transcationList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/whiteColor"
+                android:divider="@null"
+               />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/whiteColor"
+        android:minHeight="50dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/sendTransaction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/trbutC"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/tx_transcation" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="38dp"
+                android:layout_weight="1"
+                android:background="@color/trbutC"
+                android:ems="2"
+                android:gravity="left|center"
+                android:minEms="2"
+                android:text="@string/tx"
+                android:textColor="@color/whiteColor"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/incomeBut"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/tx_receivables" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="38dp"
+                android:clickable="false"
+                android:ems="2"
+                android:gravity="left|center"
+                android:minEms="2"
+                android:text="@string/income"
+                android:textColor="@color/whiteColor"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

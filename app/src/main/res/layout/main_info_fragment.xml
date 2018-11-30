@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="我的"
+                android:textColor="@color/whiteColor"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/back_down"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/info_message" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/img1"
+                android:gravity="left|center"
+                android:text="@string/message"
+                android:textColor="@color/text_color_black"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="23dp"
+                android:src="@drawable/info_next_gary" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/background_gray" />
+
+        <RelativeLayout
+            android:id="@+id/contacts"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/back_down"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/info_contacts" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/img2"
+                android:gravity="left|center"
+                android:text="@string/contacts"
+                android:textColor="@color/text_color_black"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="23dp"
+                android:src="@drawable/info_next_gary" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/wathet" />
+
+        <RelativeLayout
+            android:id="@+id/updatePIN"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/back_down"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/img7"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/info_update_pin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/img7"
+                android:gravity="left|center"
+                android:text="@string/updatePIN"
+                android:textColor="@color/text_color_black"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="23dp"
+                android:src="@drawable/info_next_gary" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/background_gray" />
+
+        <RelativeLayout
+            android:id="@+id/reBindPhone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/back_down"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/img8"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/info_rebind_phone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/img8"
+                android:gravity="left|center"
+                android:text="@string/rebindPhone"
+                android:textColor="@color/text_color_black"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="23dp"
+                android:src="@drawable/info_next_gary" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/background_gray" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/background_gray" />
+
+        <RelativeLayout
+            android:id="@+id/reSetWallet"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/back_down"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/img10"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/info_reset_wallet" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/img10"
+                android:gravity="left|center"
+                android:text="@string/resetWallet"
+                android:textColor="@color/text_color_black"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="23dp"
+                android:src="@drawable/info_next_gary" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/wathet" />
+
+        <RelativeLayout
+            android:id="@+id/agreement"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/back_down"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/info_agreement" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/img5"
+                android:gravity="left|center"
+                android:text="@string/agreement"
+                android:textColor="@color/text_color_black"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="23dp"
+                android:src="@drawable/info_next_gary" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/background_gray" />
+
+        <RelativeLayout
+            android:id="@+id/helpLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/back_down"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/info_help" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/img3"
+                android:gravity="left|center"
+                android:text="@string/help"
+                android:textColor="@color/text_color_black"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="23dp"
+                android:src="@drawable/info_next_gary" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/background_gray" />
+
+        <RelativeLayout
+            android:id="@+id/guanyu"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/back_down"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/info_guanyu" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/img4"
+                android:gravity="left|center"
+                android:text="@string/guanyu"
+                android:textColor="@color/text_color_black"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="23dp"
+                android:src="@drawable/info_next_gary" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/background_gray" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top" />
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/whiteColor"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/reminder"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="left"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/reminderMsg"
+            android:textColor="@color/text_color_black"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/closeBut"
+                android:layout_width="130dp"
+                android:layout_height="37dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/fillet_fill_wathet"
+                android:src="@drawable/exit"
+                android:text="取消"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/agreeBut"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="130dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="13dp"
+                android:background="@drawable/fillet_fill_wathet"
+                android:text="@string/agree"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

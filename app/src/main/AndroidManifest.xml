@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hunter.wallet"
+    android:sharedUserId="android.uid.system">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+
+    <application
+        android:name=".WalletApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/wallet_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/wallet_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/WelcomeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainFragmentActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/MainThem" />
+        <activity
+            android:name=".activity.InitActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.AgreementActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.AddressShowActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.BackupMnemonicActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.TokenSelectActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.EthTokenImportActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.ContactsActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.CreateShowMnemonicActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.CreateWalletActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.HelpActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.ImportActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.RebindPhoneActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.ReSetActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.UnlockActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.UpdatePinActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.AboutActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.EthTxInfoActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.UpdatePassActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.WalletInfoActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.CopyKeyStoreActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.CopyMnemonicActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.CopyPrvActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.EthTxActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.EthTxDetailActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".activity.ContactsAddActivity"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".activity.BtcTxInfoActivity"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".activity.BtcTxDetailActivity"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".activity.BtcTxActivity"
+            android:screenOrientation="nosensor" />
+
+        <activity
+                android:name=".activity.BtcAddressShowActivity"
+                android:screenOrientation="nosensor" />
+
+
+        <service
+            android:name=".service.UpdateCacheService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/importPreBut"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <ImageButton
+                android:layout_width="10dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8dp"
+                android:background="@color/colorPrimary"
+                android:scaleType="centerInside"
+                android:src="@drawable/pre" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/infoWalletName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:text="@string/importWallet"
+            android:textColor="@color/whiteColor"
+            android:textSize="19dp" />
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/saoyisao"-->
+            <!--android:layout_width="22dp"-->
+            <!--android:layout_height="22dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_marginRight="11dp"-->
+            <!--android:layout_weight="5"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:src="@drawable/coin_saoyisao2" />-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:transitionName="radio">
+
+            <RadioButton
+                android:id="@+id/keyStoreRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_but_change"
+                android:checked="true"
+                android:text="@string/KeyStore"
+                android:textSize="14dp" />
+
+            <RadioButton
+                android:id="@+id/prvRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:button="@drawable/radio_but_change"
+                android:text="@string/prvKey"
+                android:textSize="14dp" />
+
+            <RadioButton
+                android:id="@+id/WordRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:button="@drawable/radio_but_change"
+                android:text="@string/words"
+                android:textSize="14dp" />
+
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/importFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></FrameLayout>
+    </LinearLayout>
+</LinearLayout>
